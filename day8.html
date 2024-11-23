@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Task 1: Greeting Function
+    Scenario: Create a function that takes a name as an argument and returns a greeting message.
+    Task:
+    Define a function greet that takes one parameter name.
+    The function should print a greeting message like “Hello, [name]!”.
+    Call the function with different names and print the results. -->
+    <script>
+        
+        function greet(name){
+            console.log( "hello,"+ [name] +"!");
+        }
+        greet("purna")
+        greet("pavan")
+        greet("pravadhi")
+        greet("chiddesh")
+        greet("madhav")
+        greet("siddhardha")
+    </script>
+    
+    <!-- Task 2: Sum Function
+    Scenario: Create a function that takes two numbers as arguments and returns their sum.
+    Task:
+    Define a function sum that takes two parameters a and b.
+    The function should return the sum of a and b.
+    Call the function with different numbers and print the results. -->
+    <script>
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum(2,2));
+        console.log(sum(4,8));
+        console.log(sum(5,1));
+    </script>
+<!--     
+    Task 3: Square Function
+    Scenario: Create a function that takes a number as an argument and returns its square.
+    Task:
+    Define a function square that takes one parameter num.
+    The function should return the square of num.
+    Call the function with different numbers and print the results. -->
+    <script>
+        function square(num){
+            return num*num;
+        }
+        console.log(square(2));
+        console.log(square(6));
+        console.log(square(9));
+
+    </script>
+    
+<!--     
+    Task 4: Average Function
+    Scenario: Create a function that takes an array of numbers as an argument and returns the average.
+    Task:
+    hint:[2,5,2] =9/3=3
+    Define a function average that takes one parameter arr.
+    The function should return the average of the numbers in arr.
+    Call the function with different arrays and print the results. -->
+    <script>
+        function average(arr){
+            let sum = arr.reduce((acc, num) => acc + num);
+            return sum/arr.length
+
+        }
+        console.log(average([2,5,2]));
+        console.log(average([4,5,6]));
+    </script>
+    
+    
+    
+    
+    <!-- Task 5:  Vowels Function
+    Scenario: Create a function that takes a string as an argument and returns weather the strings contains vowels or not .
+    Task:
+    Define a function that takes one parameter str.
+    The function should return whether string contains vowels or not.
+    use loops and if conditions
+    Call the function with different strings and print the results.
+    hello --a,e ,i ,o,u---it contains vowels
+    hll---it doesnt contains vowels -->
+    <script>
+        
+function containsVowels(str){
+           let vowels="aeiou";
+           for(i=0;i<str.length;i++){
+            if(vowels.includes(str[i].toLowerCase())){
+                return `${str} it contains vowels`
+            }
+           }
+           return `${str} it doesnot contains vowels`
+        }
+        console.log(containsVowels("PRAVADHI"));
+        console.log(containsVowels("prvdh"))
+    </script>
+    
+<!--     
+    Task 6: Temperature Converter
+    Scenario: Create a function that converts temperatures between Celsius and Fahrenheit.
+    Task:
+    Define a function convertTemperature that takes two parameters: temp (the temperature) and scale (the scale to convert to, either “C” or “F”).
+    The function should return the converted temperature.
+    Test the function with different temperatures and scales and print the results.
+    Hints:-
+    formula for celscious (temp - 32) * 5/9
+    formula for fahrehnheit (temp * 9/5) + 32
+     -->
+    <script>
+        function convertTemperature(temp, scale) {
+            if (scale === "C") {
+                return (temp - 32) * 5 / 9;
+            } else if (scale === "F") {
+                return (temp * 9 / 5) + 32;
+            } else {
+                return 
+            }
+        }
+        console.log(convertTemperature(26, 'C')); 
+        console.log(convertTemperature(50, 'F'));  
+        console.log(convertTemperature(150, 'C')); 
+        console.log(convertTemperature(77, 'F'));
+    </script>
+</body>
+</html>
+
+
+
